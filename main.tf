@@ -14,11 +14,11 @@ provider "aws" {
 }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-023d1ab98b72c7720"
+  ami           = var.ami_id
   instance_type = "t2.micro"
 
   tags = {
-    Name = "FastServerCreation"
+    Name = var.instance_name
   }
 }
 
