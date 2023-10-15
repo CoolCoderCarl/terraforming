@@ -7,10 +7,10 @@ resource "aws_vpc" "main" {
 }
 
 resource "aws_subnet" "public_subnets" {
-#  count      = length(var.public_subnet_cidrs)
-  vpc_id     = aws_vpc.main.id
+  #  count      = length(var.public_subnet_cidrs)
+  vpc_id                  = aws_vpc.main.id
   map_public_ip_on_launch = "true"
-  cidr_block = var.public_subnet_cidrs
+  cidr_block              = var.public_subnet_cidrs
 
   tags = {
     Name = "Public Subnet"
@@ -18,7 +18,7 @@ resource "aws_subnet" "public_subnets" {
 }
 
 resource "aws_subnet" "private_subnets" {
-#  count      = length(var.private_subnet_cidrs)
+  #  count      = length(var.private_subnet_cidrs)
   vpc_id     = aws_vpc.main.id
   cidr_block = var.private_subnet_cidrs
 
