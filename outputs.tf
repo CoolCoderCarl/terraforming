@@ -10,11 +10,11 @@ output "instance_public_ip" {
 
 output "public_subnet_id" {
   description = "Public subnets ID"
-  value = aws_subnet.public_subnets.id
+  value       = aws_subnet.public_subnets.id
 }
 
 output "private_subnet_id" {
   description = "Private subnets ID"
-  value = aws_subnet.private_subnets.id
+  value       = aws_subnet.private_subnets.id
 }
 

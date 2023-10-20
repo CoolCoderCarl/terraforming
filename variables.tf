@@ -31,3 +31,26 @@ variable "ami_id" {
   type        = string
   default     = "ami-053b0d53c279acc90"
 }
+
+
+variable "database_name" {
+
+  description = "Value of the Database Name of the DynamoDB"
+  type        = string
+  default     = "herold_database"
+}
+
+
+variable "hash_key" {
+
+  description = "Value of the Hash of the DynamoDB"
+  type        = string
+  default     = "user_name"
+}
+
+variable "range_key" {
+
+  description = "Values of the Range Key of the DynamoDB"
+  type        = string
+  default     = "day_month"
+}
