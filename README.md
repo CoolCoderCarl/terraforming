@@ -1,12 +1,12 @@
 # terraforming
 Terraform infrastructure for pet projects
 
-Create one EC2
-Create one DynamoDB
-Create one S3 bucket
-Create one private & one public subnet
-Create one Internet GateWay
-Create one Route Table
+Create one EC2  
+Create one DynamoDB  
+Create one S3 bucket  
+Create one private & one public subnet  
+Create one Internet GateWay  
+Create one Route Table  
 
 ## Prehistory
 
